@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- TODO define your own vocabulary/syntax. Example follows:  -->
+<!ENTITY % element_commun "titre,auteur">
+<!ENTITY % attribut_commun "langue CDATA #REQUIRED nbpage CDATA #IMPLIED">
+<!ELEMENT ouvrage ((article|rapport)*)>
+<!ELEMENT article (%element_commun;,section,(annee)?)>
+<!ATTLIST article %attribut_commun;>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT auteur (nom,prenom,pays)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT pays (#PCDATA)>
+<!ELEMENT section (para+)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT rapport (%element_commun;,chapitre)>
+<!ATTLIST rapport %attribut_commun;>
+<!ELEMENT chapitre (section+)>
+

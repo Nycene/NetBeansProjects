@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- TODO define your own vocabulary/syntax. Example follows:  -->
+<!ENTITY % prod SYSTEM "produit.dtd"> 
+<!ELEMENT commandes (commande)+>
+<!ELEMENT commande (produit,client,nombre,prix)>
+%prod;
+<!ELEMENT client (#PCDATA)>
+<!ELEMENT prix (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>

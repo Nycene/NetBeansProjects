@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE ouvrage SYSTEM "ouvrage.dtd">
+<ouvrage> 
+    <article langue="arabe" nbpage="5">
+        <titre> Evolution du monde</titre>
+        <auteur> 
+            <nom> Fatma</nom>
+            <prenom> Tounsi</prenom>
+            <pays> Tunisie </pays>
+        </auteur>
+        <section> 
+            <para> tout a été dit </para>
+        </section>
+    </article>
+    <rapport langue="français" nbpage="20">
+        <titre> Xrapport</titre>
+        <auteur> 
+            <nom> Xnom </nom>
+            <prenom> Xprenom</prenom>
+            <pays> Xpays </pays>
+        </auteur>
+        <chapitre>
+            <section> 
+                <para> du texte</para>
+            </section>
+        </chapitre>
+    </rapport>
+    <article langue="français"> 
+        <titre> Histoire du monde </titre>
+        <auteur>
+            <nom> Dupond</nom> 
+            <prenom> Jean </prenom>
+            <pays> France </pays>
+        </auteur>
+        <section> 
+            <para> texte intègral>/</para>
+        </section>
+        <annee> 2000 </annee>
+    </article>
+</ouvrage>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT etudiants (etudiant)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT etudiant (nom|prenom|age)*>
+<!ATTLIST etudiant dep CDATA #IMPLIED>
+<!ATTLIST etudiants année CDATA #IMPLIED>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nom (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT prenom (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT age (#PCDATA)>

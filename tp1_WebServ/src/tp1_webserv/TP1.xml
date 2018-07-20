@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE etudiants SYSTEM "TP1.dtd">
+
+<etudiants année="2 eme année"> 
+    <etudiant dep="informatique" > 
+        <nom> Singer </nom>
+        <prenom> Nicolas</prenom>
+</etudiant>
+<etudiant dep="électrique">
+        <nom> Trouilhet </nom>
+        <prenom> Sylvie</prenom>
+        <prenom> Sylva </prenom>
+        <age> 22</age>
+</etudiant>
+</etudiants>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:simpleType name="CouleurType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="blanc"/>
+            <xs:enumeration value="bleu"/>
+            <xs:enumeration value="noir"/>
+            <xs:enumeration value="vert"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="Stylo">
+        <xs:complexType>
+            <xs:attribute name="couleur" type ="CouleurType"/>
+        </xs:complexType>
+    </xs:element>
+     <xs:element name="NoteExam"> 
+        <xs:simpleType> 
+            <xs:restriction base="xs:integer">
+                <xs:minInclusive value="3"/>
+                <xs:maxInclusive value="18"/>
+            </xs:restriction>
+        </xs:simpleType>
+         </xs:element>
+        <xs:element name="mot">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[a-z]+"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+</xs:schema>
